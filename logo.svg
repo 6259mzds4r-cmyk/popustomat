@@ -1,0 +1,23 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="popRibbon" x1="20" y1="18" x2="98" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF7B6B"/>
+      <stop offset="55%" stop-color="#E54D3D"/>
+      <stop offset="100%" stop-color="#C2382B"/>
+    </linearGradient>
+    <radialGradient id="popCoin" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFE08A"/>
+      <stop offset="65%" stop-color="#F5B841"/>
+      <stop offset="100%" stop-color="#DF9B20"/>
+    </radialGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#FAF5EE"/>
+  <circle cx="63" cy="54" r="38" fill="#E54D3D" opacity="0.08"/>
+  <path d="M37 97 C37 71, 36 46, 39 33 C42 21, 56 18, 69 21 C86 25, 95 39, 93 55 C91 71, 77 81, 61 79 C50 78, 44 70, 44 60"
+        stroke="url(#popRibbon)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 89 C37 67, 37 47, 40 35 C43 24, 55 21, 67 24"
+        stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" opacity="0.28"/>
+  <circle cx="65.5" cy="50.5" r="11.5" fill="url(#popCoin)"/>
+  <circle cx="62" cy="47" r="3.2" fill="#FFFFFF" opacity="0.5"/>
+  <path d="M56 91 C65 95, 76 92, 83 84" stroke="#F5B841" stroke-width="5.5" stroke-linecap="round"/>
+</svg>

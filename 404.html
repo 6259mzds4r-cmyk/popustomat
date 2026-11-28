@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="sr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Popustomat</title>
+<script>
+(function () {
+  // Telegram/Viber/WhatsApp mesajları ürün sayfasına (p/<ülke>/<kimlik>.html) bağlanır; sayfa bir sonraki vitrin
+  // yayınına (09:00/14:00/18:30) kadar yoksa ziyaretçiyi ülkesinin vitrin sekmesine taşı (k/g izleme korunur).
+  var yol = location.pathname, i = yol.indexOf("/p/"), taban = i >= 0 ? yol.slice(0, i) : "";
+  var m = yol.match(/\/p\/([a-z]{2})\//), q = new URLSearchParams(location.search), o = new URLSearchParams();
+  ["k", "g"].forEach(function (a) { if (q.get(a)) o.set(a, q.get(a)); });
+  var qs = o.toString();
+  location.replace(taban + "/" + (qs ? "?" + qs : "") + (m ? "#" + m[1] : ""));
+})();
+</script></head><body><p><a href="/">Popustomat</a></p></body></html>
